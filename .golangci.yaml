@@ -6,7 +6,6 @@ run:
 
   skip-dirs:
     - tools
-    - website
     - hack
     - charts
     - designs
@@ -26,7 +25,6 @@ linters:
     - unparam
     - gocyclo
     - govet
-    - goimports
     - goheader
     - misspell
     - nilerr
@@ -42,7 +40,6 @@ linters-settings:
     locale: US
     ignore-words: []
   goimports:
-    local-prefixes: github.com/aws/karpenter
   goheader:
     template: |-
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -56,7 +53,6 @@ linters-settings:
       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
       See the License for the specific language governing permissions and
       limitations under the License.
-issues:
   fix: true
   exclude: ['declaration of "(err|ctx)" shadows declaration at']
   exclude-rules:
